@@ -1,0 +1,148 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(240, 248, 255, 0.8), rgba(135, 206, 235, 0.8)), url('/img/fondo.jpg') center/cover no-repeat;
+    background-size: 100% 220%;
+    animation: gradient 8s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+p, h2 {
+    line-height: 2.0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.profile-img {
+    width: 150px; /* Ajusta el tamaño según lo necesites */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el texto */
+.profile-text {
+    max-width: 500px; /* Limita el ancho del texto */
+    font-size: 1.1rem; /* Puedes ajustar el tamaño de la fuente */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+/* Header */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ddd !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sección proyectos */
+main {
+    margin: 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+main ul li b {
+    font-weight: bold;
+}
+
+/* Imágenes de los proyectos */
+section div img {
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1da1f2;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container .row img {
+        margin-bottom: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    main img {
+        width: 100%;
+    }
+}
+
+

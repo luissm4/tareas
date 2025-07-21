@@ -1,0 +1,236 @@
+:root {
+  --rojo: #E63946;
+  --gris-claro: #F1FAEE;
+  --gris-oscuro: #838586;
+  --texto: #333;
+  --blanco: #fff;
+  --sombra: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--blanco);
+  color: var(--texto);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* NAV */
+.nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav a {
+  color: var(--texto);
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: var(--rojo);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Animaciones */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO */
+.hero {
+  background-color: var(--gris-claro);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: var(--rojo);
+  color: var(--blanco);
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #d62839;
+  transform: scale(1.05);
+}
+
+/* SERVICIOS */
+.servicios {
+  padding: 80px 0;
+  background-color: var(--blanco);
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--rojo);
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--gris-claro);
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: var(--sombra);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+  font-size: 2.2rem;
+  color: var(--rojo);
+  margin-bottom: 1rem;
+}
+
+/* NOSOTROS */
+.nosotros {
+  padding: 80px 0;
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+}
+
+.contenido-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.contenido-nosotros img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.contenido-nosotros div {
+  flex: 1;
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 80px 0;
+  background-color: var(--gris-claro);
+}
+
+.datos-contacto {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 20px;
+}
+
+.redes a {
+  color: var(--blanco);
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .contenido-nosotros {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .logo {
+    height: 120px;
+  }
+}
+
+  

@@ -1,0 +1,95 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #006f6f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Agregado para eliminar padding predeterminado */
+    margin: 0; /* Agregado para eliminar margen predeterminado */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.main-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.5em;
+}
+
+.btn-donar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.projects-section, .testimonials-section, .donation-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.projects-section h2, 
+.testimonials-section h2, 
+.donation-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project, .testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project img, .testimonial img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px
+}
