@@ -1,0 +1,25 @@
+
+
+Lista de números pares:
+Pide al usuario un número entero positivo y crea una lista con todos los números pares desde 0 hasta ese número (incluido). Imprime la lista.
+
+Diccionario de estudiantes:
+Crea un diccionario donde las claves sean nombres de estudiantes y los valores sus notas. Luego, muestra el promedio de las notas.
+
+Verificador de palíndromos:
+Solicita una palabra o frase al usuario y determina si es un palíndromo (se lee igual al derecho y al revés, ignorando espacios y mayúsculas).
+
+Juego de adivinanza:
+El programa elige un número aleatorio entre 1 y 20. El usuario debe adivinarlo. El programa le indica si el número ingresado es mayor o menor hasta que acierte.
+
+Conversor de temperaturas:
+Pide al usuario una temperatura en grados Celsius y conviértela a Fahrenheit y Kelvin. Muestra ambos resultados.
+
+Contador de palabras:
+Solicita al usuario un texto y muestra cuántas palabras contiene.
+
+Lista sin duplicados:
+Pide al usuario que ingrese varios números separados por comas, crea una lista y elimina los duplicados. Muestra la lista final.
+
+Tabla de multiplicar:
+Solicita un número al usuario y muestra su tabla de multiplicar del 1 al 10.
